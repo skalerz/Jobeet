@@ -63,6 +63,18 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
         return parent::getName();
     }
 
+    public function getActiveJobs()
+    {
+        $this->__load();
+        return parent::getActiveJobs();
+    }
+
+    public function setActiveJobs($activeJobs)
+    {
+        $this->__load();
+        return parent::setActiveJobs($activeJobs);
+    }
+
     public function addJob(\Ens\JobeetBundle\Entity\Job $jobs)
     {
         $this->__load();

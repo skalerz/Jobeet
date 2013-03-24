@@ -1,6 +1,7 @@
 # Category.orm.yml
 Ens\JobeetBundle\Entity\Category:
   type: entity
+  repositoryClass: Ens\JobeetBundle\Repository\CategoryRepository 
   table: category
   id:
     id:

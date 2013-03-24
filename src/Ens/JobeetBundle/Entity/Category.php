@@ -29,6 +29,9 @@ class Category
      */
     private $category_affiliates;
 
+    //définition d'un parametre "active Jobs"
+    private $active_jobs;
+
     /**
      * Constructor
      */
@@ -70,6 +73,18 @@ class Category
     {
         return $this->name;
     }
+
+    //get Active Jobs
+    public function getActiveJobs() {
+        return $this->active_jobs;
+    }
+
+    //set Active Jobs
+    public function setActiveJobs($activeJobs) {
+        $this->active_jobs = $activeJobs;
+        return $this;
+    }
+
 
     /**
      * Add jobs

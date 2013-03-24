@@ -299,11 +299,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-     * @return EntityManager513e686e0a659_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager513e686e0a659_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
+     * @return EntityManager514efb7d0affe_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager514efb7d0affe_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
-        require_once '/vagrant/Jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_513e686e0a659.php';
+        require_once '/vagrant/Jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_514efb7d0affe.php';
 
         $a = new \Doctrine\Common\Cache\ArrayCache();
         $a->setNamespace('sf2orm_default_b9eef6402aa7fecbee5276d89a1acd94');
@@ -336,7 +336,7 @@ class appDevDebugProjectContainer extends Container
         $g = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $f);
         $this->get('doctrine.orm.default_manager_configurator')->configure($g);
 
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager513e686e0a659_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($g, $this);
+        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager514efb7d0affe_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($g, $this);
     }
 
     /**
@@ -2846,7 +2846,7 @@ class appDevDebugProjectContainer extends Container
     /**
      * Gets the doctrine.orm.entity_manager service alias.
      *
-     * @return EntityManager513e686e0a659_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
+     * @return EntityManager514efb7d0affe_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
      */
     protected function getDoctrine_Orm_EntityManagerService()
     {
@@ -3241,6 +3241,7 @@ class appDevDebugProjectContainer extends Container
             'mailer_password' => NULL,
             'locale' => 'en',
             'secret' => 'ThisTokenIsNotSoSecretChangeIt',
+            'max_jobs_on_homepage' => 2,
             'controller_resolver.class' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerResolver',
             'controller_name_converter.class' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerNameParser',
             'response_listener.class' => 'Symfony\\Component\\HttpKernel\\EventListener\\ResponseListener',
@@ -3606,7 +3607,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/opt/vagrant_ruby/bin/ruby',
+            'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
@@ -3708,8 +3709,8 @@ class appDevDebugProjectContainer extends Container
             'jms_di_extra.cache_warmer.controller_file_blacklist' => array(
 
             ),
-            'jms_di_extra.doctrine_integration.entity_manager.file' => '/vagrant/Jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_513e686e0a659.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager513e686e0a659_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
+            'jms_di_extra.doctrine_integration.entity_manager.file' => '/vagrant/Jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_514efb7d0affe.php',
+            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager514efb7d0affe_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
             'security.secured_services' => array(
 
             ),
