@@ -161,3 +161,34 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+
+
+#############
+## Symfony
+#############
+
+
+# Bootstrap
+app/bootstrap*
+
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+
+# Configuration files
+app/config/parameters.ini
+app/config/parameters.yml
+
+#log files
+*/*.log
+
+#src ACME DEMO
+src/Acme/*
+
+#Composer
+composer.phar
+*.log
