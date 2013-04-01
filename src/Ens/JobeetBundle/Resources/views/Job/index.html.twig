@@ -14,7 +14,7 @@
           <div class="feed">
             <a href="">Feed</a>
           </div>
-          <h1>{{ category.name }}</h1>
+          <h1><a href="{{path('EnsJobeetBundle_category', { 'slug' : category.slug})}}">{{ category.name }}</a></h1>
         </div>
         <table class="jobs">
           {% for entity in category.activejobs %}
@@ -29,6 +29,13 @@
             </tr>
           {% endfor %}
         </table>
+        
+        {% if category.moreJobs %}
+          <div class="more_jobs">
+            and <a href="{{ path('EnsJobeetBundle_category', { 'slug': category.slug }) }}">{{ category.morejobs }}</a>
+            more...
+          </div>
+        {% endif %}  
       </div>
     {% endfor %}
   </div>
