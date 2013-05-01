@@ -192,3 +192,6 @@ src/Acme/*
 #Composer
 composer.phar
 *.log
+
+#temps files :
+*.php~
