@@ -66,3 +66,5 @@ swiftmailer:
 
 parameters:
     max_jobs_on_homepage: 2
+    max_jobs_on_category: 1
+    

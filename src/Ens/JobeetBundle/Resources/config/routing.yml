@@ -3,8 +3,8 @@ EnsJobeetBundle_job:
     prefix: /job
 
 EnsJobeetBundle_category:
-    pattern: /category/{slug}
-    defaults: { _controller: EnsJobeetBundle:Category:show}
+    pattern: /category/{slug}/{page}
+    defaults: { _controller: EnsJobeetBundle:Category:show, page: 1}
 
 EnsJobeetBundle_homepage:
     pattern:  /
